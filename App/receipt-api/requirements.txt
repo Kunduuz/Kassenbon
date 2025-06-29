@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pytesseract
+Pillow
+opencv-python-headless
+numpy
+sentence-transformers
+rapidfuzz
+python-multipart
+spellchecker
+inference-sdk

@@ -1,0 +1,18 @@
+
+name: flutter_kassenbon
+description: Eine Flutter-App zum Hochladen und Auswerten von Kassenbons.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.6
+  image_picker: ^1.0.4
+  path_provider: ^2.1.1
+
+flutter:
+  uses-material-design: true
