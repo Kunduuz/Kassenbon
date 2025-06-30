@@ -7,5 +7,5 @@ numpy
 sentence-transformers
 rapidfuzz
 python-multipart
-spellchecker
+pyspellchecker==0.5.6
 inference-sdk
