@@ -33,13 +33,14 @@ async def upload_image(file: UploadFile = File(...)):
         with open(file_path, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
 
+        result = extract_products_from_image(file_path)
+        return {"success": True, "produkte": result} 
+
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+
 # 👇 wichtig für Render:
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run("main:app", host="0.0.0.0", port=port)
-
-        result = extract_products_from_image(file_path)
-        return {"success": True, "produkte": result}
-
-    except Exception as e:
-        return {"success": False, "error": str(e)}
