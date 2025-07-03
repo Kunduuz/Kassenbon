@@ -24,7 +24,7 @@ class _OCRUploaderState extends State<OCRUploader> {
   String _result = '';
   bool _isLoading = false;
 
-  final String apiUrl = 'https://dein-api-url.onrender.com/upload'; // <- später anpassen
+  final String apiUrl = 'https://kassenbon.onrender.com'; // <- später anpassen
 
   Future<void> _pickImage(ImageSource source) async {
     final picker = ImagePicker();
